@@ -163,9 +163,9 @@ for (cancer in cancers){
   
   repertoire_diversity = merge(repertoire_diversity, annotation, by.x = "sample", by.y = "file_id")
 
-  save(data_merge,repertoire_diversity,file=paste("../data/", cancer, "/", cancer, "_FullData.Rdata", sep = ""))
-  saveRDS(repertoire_diversity, file=paste("../data/", cancer, "/", cancer, "_repertoire_diversity.rds", sep = ""))
-  print(paste0(cancer, " is done!"))
+  save(data_merge,repertoire_diversity,file=paste("../data/", cancer, "_FullData.Rdata", sep = ""))
+  saveRDS(repertoire_diversity, file=paste("../data/", cancer, "_repertoire_diversity.rds", sep = ""))
+  print(paste0(cancer, " is done!"))s
   
 }
 
